@@ -2,7 +2,8 @@
 const express = require('express');
 
 // Initalize express app
-const app = express;
+const app = express();
+
 
 // Initalize express app
 
@@ -32,17 +33,32 @@ const userDate = [
 // Create Endpoints for API
 
 //Endpoint 1
-app.get ('/api', function (req,res){
+app.get('/api', function (req,res){
     
     res.send ('Hello Wolrd! Welcome to My API')
 })
 //Endpoint 2
-app.get ('/api/users', function (req,res){
+app.get('/api/users', function (req,res){
 
     res.json (userDate);
 })
 //Endpoint 3
-app.get ('/api/users/:id', function (req,res){
+app.get('/api/user/:id', function (req,res){
 
+    const id = req.params.id;
+    const user = userDate.find(user => user.id===id);
+    if (user) {
+        
+        res.json(user)
+    }
+        else {
+            
+        res.send ('Users Not Found')
+        
+    }
 
 })
+
+app.listen(3000, function(){
+    console.log('Server Started');
+ })
