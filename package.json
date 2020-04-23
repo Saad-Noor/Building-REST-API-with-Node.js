@@ -1,0 +1,19 @@
+{
+  "name": "building-rest-api-with-node",
+  "version": "1.0.0",
+  "description": "Node.js provides a run time environment to run javascript code. It is built on the chrome’s open-source V8 engine. After being said that let's build a real REST API in Node.js &amp; Express from scratch. I'll be guiding you step by step with a detailed explanation from installing node to building our restful API.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saad-Noor/Building-REST-API-with-Node.js.git"
+  },
+  "author": "Saad-Noor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saad-Noor/Building-REST-API-with-Node.js/issues"
+  },
+  "homepage": "https://github.com/Saad-Noor/Building-REST-API-with-Node.js#readme"
+}
